@@ -21,8 +21,8 @@ body {
 }
 
 .content {
-  width: 65%;
-  padding: 15em 0em 15em 10em;
+  width: 70%;
+  padding: 16em 0em 11em 10em;
   float: left;
 }
 
@@ -37,7 +37,8 @@ body {
 .inner-content {
   position: relative;
   color: #ffffff;
-  width: 32em;
+  width: 31em;
+  font-size: 17.5px;
 }
 
 .myform-container {
@@ -45,7 +46,7 @@ body {
 }
 
 .myform-card-one {
-  margin: 4em 10em 0em 0em;
+  margin: 3em 10em 0em 0em;
   background-color: hsl(248, 32%, 49%);
   padding: 5px;
   text-align: center;
@@ -65,8 +66,7 @@ body {
 .myform-card-two {
   margin: 2em 10em 0em 0em;
   background-color: #ffffff;
-  padding: 40px;
-  text-align: center;
+  padding: 40px 40px 25px;
   border-radius: 10px;
 }
 
@@ -76,14 +76,36 @@ body {
 
 .myform-card-two form > input {
   height: 40px;
-  margin-bottom: 25px;
   font-size: 16px;
-  color: hsl(249, 10%, 26%);
   font-weight: 600;
 }
 
 input {
   padding-left: 30px;
+}
+
+input.invalid {
+  background: url("../images/icon-error.svg") no-repeat;
+  background-position-x: 26em;
+  background-position-y: 0.6em;
+  border-color: hsl(0, 100%, 74%);
+}
+
+.invalid::placeholder {
+  color: hsl(0, 100%, 74%);
+}
+
+.error-icon {
+  position: relative;
+}
+
+.muted-text {
+  color: hsl(0, 100%, 74%);
+  font-size: 12px;
+  font-style: italic;
+  text-align: right;
+  margin-top: 5px;
+  visibility: hidden;
 }
 
 .myform-card-three {
@@ -101,6 +123,7 @@ input {
 .conditions p {
   color: hsl(246, 25%, 77%);
   font-size: 12px;
+  text-align: center;
 }
 
 .conditions p span {
@@ -111,6 +134,7 @@ input {
 footer {
   color: #ffffff;
   font-size: 12px;
+  margin-top: 24px;
 }
 
 .attribution {
@@ -129,7 +153,7 @@ footer {
   main {
     background-image: url("../images/bg-intro-desktop.png");
     width: 100%;
-    height: 94vh;
+    height: 100%;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -140,7 +164,7 @@ footer {
   main {
     background-image: url("../images/bg-intro-desktop.png");
     width: 100%;
-    height: 94vh;
+    height: 100%;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -151,7 +175,7 @@ footer {
   main {
     background-image: url("../images/bg-intro-mobile.png");
     width: 100%;
-    height: 94vh;
+    height: 100%;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
