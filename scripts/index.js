@@ -28,6 +28,8 @@ function formSubmit() {
   /* CHECKING IF VALID OR NOT */
   if (firstName.value == "") {
     document.getElementById("first-name").style.visibility = "visible";
+    document.getElementById("first-name").innerHTML =
+      "First Name cannot be empty";
     document.getElementById("fname").placeholder = "";
     firstName.classList.add("invalid");
   } else {
@@ -35,6 +37,8 @@ function formSubmit() {
   }
   if (lastName.value == "") {
     document.getElementById("last-name").style.visibility = "visible";
+    document.getElementById("last-name").innerHTML =
+      "Last Name cannot be empty";
     document.getElementById("lname").placeholder = "";
     lastName.classList.add("invalid");
   } else {
@@ -43,6 +47,8 @@ function formSubmit() {
   if (checkEmail == "" || !checkEmail.includes("@")) {
     email.value = "";
     document.getElementById("email-id").style.visibility = "visible";
+    document.getElementById("email-id").innerHTML =
+      "Looks like this is not an email";
     document.getElementById("mail").placeholder = "email@example/com";
     email.classList.add("invalid");
   } else {
@@ -50,6 +56,7 @@ function formSubmit() {
   }
   if (password.value == "") {
     document.getElementById("password").style.visibility = "visible";
+    document.getElementById("password").innerHTML = "Password cannot be empty";
     document.getElementById("pass").placeholder = "";
     password.classList.add("invalid");
   } else {

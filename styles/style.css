@@ -6,29 +6,8 @@ body {
   background-color: hsl(0, 100%, 74%);
 }
 
-.container {
-  display: inline-flex;
-}
-
-.left-container {
-  display: flex;
-  float: left;
-}
-
-.right-container {
-  display: flex;
-  float: right;
-}
-
-.content {
-  width: 70%;
-  padding: 16em 0em 11em 10em;
-  float: left;
-}
-
 .heading {
   position: relative;
-  margin: 0em 0em 0.5em 0em;
   color: #ffffff;
   font-size: 48px;
   line-height: 1.2em;
@@ -37,7 +16,6 @@ body {
 .inner-content {
   position: relative;
   color: #ffffff;
-  width: 31em;
   font-size: 17.5px;
 }
 
@@ -46,11 +24,10 @@ body {
 }
 
 .myform-card-one {
-  margin: 3em 10em 0em 0em;
   background-color: hsl(248, 32%, 49%);
-  padding: 5px;
   text-align: center;
   border-radius: 10px;
+  box-shadow: 0px 10px 0px 0px rgb(173 98 98 / 50%);
 }
 
 .myform-card-one p {
@@ -64,14 +41,9 @@ body {
 }
 
 .myform-card-two {
-  margin: 2em 10em 0em 0em;
   background-color: #ffffff;
-  padding: 40px 40px 25px;
   border-radius: 10px;
-}
-
-.myform-card-two form {
-  display: grid;
+  box-shadow: 0px 10px 0px 0px rgb(173 98 98 / 50%);
 }
 
 .myform-card-two form > input {
@@ -86,8 +58,6 @@ input {
 
 input.invalid {
   background: url("../images/icon-error.svg") no-repeat;
-  background-position-x: 26em;
-  background-position-y: 0.6em;
   border-color: hsl(0, 100%, 74%);
 }
 
@@ -110,8 +80,6 @@ input.invalid {
 
 .myform-card-three {
   background-color: hsl(154, 59%, 51%);
-  padding: 20px;
-  width: 30em;
   border: none;
   font-size: 16px;
   border-radius: 5px;
@@ -135,6 +103,7 @@ footer {
   color: #ffffff;
   font-size: 12px;
   margin-top: 24px;
+  background: transparent;
 }
 
 .attribution {
@@ -149,8 +118,133 @@ footer {
   text-decoration: none;
 }
 
-@media (max-width: 1920px) and (min-width: 1440px) {
-  main {
+@media only screen and (min-width: 375px) {
+  body {
+    background-image: url(../images/bg-intro-mobile.png);
+    width: 100%;
+    height: 100%;
+    background-size: auto;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .container {
+    width: auto;
+  }
+
+  .content {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+  }
+
+  .left-container {
+    width: auto;
+  }
+
+  .right-container {
+    display: block;
+    float: none;
+  }
+
+  .heading {
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+    font-size: 42px;
+    line-height: 1.1em;
+    padding-top: 2em;
+    margin: 0 auto;
+  }
+
+  .inner-content {
+    position: relative;
+    color: #ffffff;
+    width: 20em;
+    font-size: 24px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 1em;
+  }
+
+  .right-container {
+    width: auto;
+  }
+
+  .myform-card-one {
+    background-color: hsl(248, 32%, 49%);
+    padding: 2em;
+    text-align: center;
+    border-radius: 10px;
+    width: 80%;
+    margin: 4em auto;
+    box-shadow: 0px 10px 0px 0px rgb(173 98 98 / 50%);
+  }
+  .myform-card-one p {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0em 5em;
+  }
+  .myform-card-one p span {
+    color: #ffffff;
+    font-weight: normal;
+  }
+  .myform-card-two {
+    background-color: #ffffff;
+    padding: 3em 2em 2em;
+    border-radius: 10px;
+    margin: 3em auto;
+    width: 80%;
+    box-shadow: 0px 10px 0px 0px rgb(173 98 98 / 50%);
+  }
+  .myform-card-two form {
+    width: 100%;
+  }
+  .myform-card-two form > input {
+    height: 48px;
+    font-size: 16px;
+    font-weight: 600;
+    width: calc(100% - 2.2em);
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+  .myform-card-two form > input:active {
+    height: 48px;
+    font-size: 16px;
+    font-weight: 600;
+    width: calc(100% - 2.2em);
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+  .myform-card-three {
+    background-color: hsl(154, 59%, 51%);
+    padding: 1em 0em;
+    width: 100%;
+    border: none;
+    font-size: 23px;
+    border-radius: 8px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow: 0px 5px 0px 0px rgba(0, 146, 83, 0.69);
+  }
+  .conditions p {
+    color: hsl(246, 25%, 77%);
+    font-size: 14px;
+    text-align: center;
+    font-weight: 700;
+    padding: 0em 4em;
+  }
+  .conditions p span {
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
     background-image: url("../images/bg-intro-desktop.png");
     width: 100%;
     height: 100%;
@@ -158,26 +252,121 @@ footer {
     background-position: center;
     background-attachment: fixed;
   }
-}
-
-@media (max-width: 1440px) and (min-width: 375px) {
-  main {
-    background-image: url("../images/bg-intro-desktop.png");
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+  .container {
+    display: flex;
   }
-}
 
-@media (max-width: 375px) {
-  main {
-    background-image: url("../images/bg-intro-mobile.png");
+  .left-container {
+    display: flex;
+    float: left;
+  }
+
+  .right-container {
+    display: flex;
+    float: right;
+  }
+  .heading {
+    position: relative;
+    margin: 0em 0.2em 0em 0.2em;
+    color: #ffffff;
+    font-size: 52px;
+    line-height: 1.2em;
+    text-align: left;
+    padding-top: 0em;
+  }
+  .content {
+    width: auto;
+    margin: 19.5em 0em 0em 10em;
+    float: left;
+    position: relative;
+    text-align: left;
+  }
+  .inner-content {
+    position: absolute;
+    color: #ffffff;
+    width: 32em;
+    font-size: 17.5px;
+    font-weight: 500;
+    text-align: left;
+    margin-top: 1em;
+  }
+  .myform-container {
+    width: 37em;
+    padding: 8em 10em 0em 0em;
+    float: left;
+    position: relative;
+    text-align: center;
+  }
+  .myform-card-two form {
+    display: grid;
+  }
+  .myform-card-one {
+    margin: 0em;
+    background-color: hsl(248, 32%, 49%);
+    padding: 1px;
+    text-align: center;
+    border-radius: 10px;
     width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+  }
+  .myform-card-one p {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0em;
+  }
+  .myform-card-two {
+    margin: 1.5em 0em 0em 0em;
+    background-color: #ffffff;
+    padding: 35px 40px 35px 40px;
+    border-radius: 10px;
+    width: auto;
+  }
+  .myform-card-two form > input {
+    height: 52px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+  .myform-card-two form > input:active {
+    height: 52px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+  .myform-card-three {
+    background-color: hsl(154, 59%, 51%);
+    padding: 1em 0em 1em 0em;
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    margin-top: 5px;
+    border-radius: 8px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow: 0px 5px 0px 0px rgba(0, 146, 83, 0.69);
+  }
+  .muted-text {
+    color: hsl(0, 100%, 74%);
+    font-size: 12px;
+    font-style: italic;
+    text-align: right;
+    margin-top: 5px;
+    visibility: visible;
+  }
+  input.invalid {
+    background: url("../images/icon-error.svg") no-repeat;
+    background-position-x: 28em;
+    background-position-y: 1em;
+    border-color: hsl(0, 100%, 74%);
+  }
+  .conditions p {
+    color: hsl(246, 25%, 77%);
+    font-size: 12px;
+    text-align: center;
+    padding: 1em 0em 1em 0em;
   }
 }
