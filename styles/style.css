@@ -286,6 +286,173 @@ footer {
     font-weight: 700;
   }
 }
+@media only screen and (min-width: 1024px) {
+  body {
+    background-image: url("../images/bg-intro-desktop.png");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .container {
+    display: flex;
+    height: 100%;
+  }
+
+  .left-container {
+    display: flex;
+    float: left;
+  }
+
+  .right-container {
+    display: flex;
+    float: right;
+  }
+  .heading {
+    position: relative;
+    margin: 0em;
+    color: #ffffff;
+    font-size: 47px;
+    line-height: 1.2em;
+    text-align: left;
+    padding-top: 0em;
+  }
+  .content {
+    width: auto;
+    margin: 17em 0em 0em 9em;
+    float: left;
+    position: relative;
+    text-align: left;
+  }
+  .inner-content {
+    position: relative;
+    color: #ffffff;
+    width: 32em;
+    font-size: 15.5px;
+    font-weight: 500;
+    text-align: left;
+    margin: 1.8em 0em 0em 0em;
+  }
+  .myform-container {
+    width: 32em;
+    padding: 7em 9em 0em 0em;
+    float: left;
+    position: relative;
+    text-align: center;
+  }
+  .myform-card-two form {
+    display: grid;
+  }
+  .myform-card-one {
+    margin: 0em;
+    background-color: hsl(248, 32%, 49%);
+    padding: 1px;
+    text-align: center;
+    border-radius: 10px;
+    width: 100%;
+  }
+  .myform-card-one p {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 0em;
+  }
+  .myform-card-two {
+    margin: 1.5em 0em 0em 0em;
+    background-color: #ffffff;
+    padding: 30px 40px 20px 40px;
+    border-radius: 10px;
+    width: auto;
+  }
+  .myform-card-two form > input {
+    height: 48px;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+
+  .myform-card-two form > input:active {
+    height: 48px;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+  .myform-card-two form > input.invalid {
+    height: 48px;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 2px solid hsl(0, 100%, 74%);
+  }
+  .myform-card-three {
+    background-color: hsl(154, 59%, 51%);
+    padding: 1em 0em 1em 0em;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    margin-top: 5px;
+    border-radius: 8px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow: 0px 5px 0px 0px rgba(0, 146, 83, 0.69);
+  }
+  .myform-card-three:hover {
+    background-color: hsl(154deg 56% 46%);
+    padding: 1em 0em 1em 0em;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    margin-top: 5px;
+    border-radius: 8px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow: 0px 5px 0px 0px rgba(0, 146, 83, 0.69);
+  }
+  .myform-card-three:active {
+    background-color: hsl(154deg 56% 46%);
+    padding: 1em 0em 1em 0em;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    margin-top: 5px;
+    border-radius: 8px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow: 0px 5px 0px 0px rgba(0, 146, 83, 0.69);
+  }
+  .muted-text {
+    color: hsl(0, 100%, 74%);
+    font-size: 12px;
+    font-style: italic;
+    text-align: right;
+    margin-top: 5px;
+    visibility: visible;
+  }
+  input.invalid {
+    background: url("../images/icon-error.svg") no-repeat;
+    background-position-x: 28em;
+    background-position-y: 1em;
+    border-color: hsl(0, 100%, 74%);
+  }
+  .conditions p {
+    color: hsl(246, 25%, 77%);
+    font-size: 11px;
+    text-align: center;
+    padding: 0em 0em 1em 0em;
+  }
+}
 
 @media only screen and (min-width: 1440px) {
   body {
@@ -312,7 +479,7 @@ footer {
   }
   .heading {
     position: relative;
-    margin: 0em 0.2em 0em 0.2em;
+    margin: 0em 0.2em 0em 0em;
     color: #ffffff;
     font-size: 52px;
     line-height: 1.2em;
@@ -327,13 +494,13 @@ footer {
     text-align: left;
   }
   .inner-content {
-    position: absolute;
+    position: relative;
     color: #ffffff;
     width: 32em;
     font-size: 17.5px;
     font-weight: 500;
     text-align: left;
-    margin-top: 1em;
+    margin: 2em 0em 0em 0em;
   }
   .myform-container {
     width: 37em;
